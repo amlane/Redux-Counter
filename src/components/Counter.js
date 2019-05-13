@@ -45,9 +45,9 @@ class Counter extends Component {
 // this component receives the whole state. In a more complex
 // redux application, though, it would receive only the relevant
 // parts it needs from the state object.
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
     return {
-        count: state
+        count: state.count
     };
 };
 
